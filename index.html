@@ -157,7 +157,11 @@ section { padding-block: 72px; }
 .doc-photo span { font-family: var(--font-display); font-size: 3.2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
 .doc-photo img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
 .doc h3 { font-size: var(--step-1); }
-.doc .role { color: var(--muted); font-size: 0.95rem; }
+.doc-info { display: grid; gap: 6px; }
+.doc .role { color: var(--accent); font-size: 0.95rem; font-weight: 600; }
+.doc .bio { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+.doc .cro { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.doc-photo img { object-position: center 20%; }
 @media (max-width: 900px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 420px) { .team-grid { gap: 14px; } .doc-photo span { font-size: 2.4rem; } }
 
@@ -323,29 +327,35 @@ footer a { color: var(--muted); }
       </div>
       <div class="team-grid">
         <article class="doc">
-          <div class="doc-photo"><span>LP</span><!-- <img src="fotos/leo.jpg" alt="Dr. Leo Perale"> --></div>
-          <div>
-            <h3>Dr. Leo Perale</h3>
-            <p class="role">Cirurgião-dentista</p>
+          <div class="doc-photo"><span>LP</span><img src="fotos/leo.jpg" alt="Dr. Léo Perale Neto" loading="lazy"></div>
+          <div class="doc-info">
+            <h3>Dr. Léo Perale Neto</h3>
+            <p class="role">Implantodontista</p>
+            <p class="bio">Especialista em Implantodontia e atua em harmonização orofacial. Graduado pela UniVap.</p>
+            <p class="cro">CRO-SP 105890</p>
           </div>
         </article>
         <article class="doc">
-          <div class="doc-photo"><span>BP</span><!-- <img src="fotos/bruna.jpg" alt="Dra. Bruna Perale"> --></div>
-          <div>
-            <h3>Dra. Bruna Perale</h3>
-            <p class="role">Cirurgiã-dentista</p>
+          <div class="doc-photo"><span>BP</span><img src="fotos/bruna.jpg" alt="Dra. Bruna Batista Perale" loading="lazy"></div>
+          <div class="doc-info">
+            <h3>Dra. Bruna Batista Perale</h3>
+            <p class="role">Ortodontista</p>
+            <p class="bio">Especialista em Ortodontia. Graduada pela Universidade Braz Cubas.</p>
+            <p class="cro">CRO-SP 126214</p>
           </div>
         </article>
         <article class="doc">
-          <div class="doc-photo"><span>EP</span><!-- <img src="fotos/elcimara.jpg" alt="Dra. Elcimara Perale"> --></div>
-          <div>
-            <h3>Dra. Elcimara Perale</h3>
-            <p class="role">Cirurgiã-dentista</p>
+          <div class="doc-photo"><span>EP</span><img src="fotos/elcimara.jpg" alt="Dra. Elcimara Batista Perale" loading="lazy"></div>
+          <div class="doc-info">
+            <h3>Dra. Elcimara Batista Perale</h3>
+            <p class="role">Endodontista</p>
+            <p class="bio">Atualização em Endodontia pelo Instituto Odonto Sales. Graduada pela Universidade Braz Cubas.</p>
+            <p class="cro">CRO-SP 134357</p>
           </div>
         </article>
         <article class="doc">
-          <div class="doc-photo"><span>CR</span><!-- <img src="fotos/camile.jpg" alt="Dra. Camile Rocca"> --></div>
-          <div>
+          <div class="doc-photo"><span>CR</span><img src="fotos/camile.jpg" alt="Dra. Camile Rocca" loading="lazy"></div>
+          <div class="doc-info">
             <h3>Dra. Camile Rocca</h3>
             <p class="role">Cirurgiã-dentista</p>
           </div>
@@ -403,7 +413,7 @@ footer a { color: var(--muted); }
 
 <footer>
   <div class="wrap">
-    <p>© <span id="ano">2026</span> Perale Odontologia · Jacareí-SP<br>Responsável técnico: Dr. Leo Perale · CRO-SP 00000</p>
+    <p>© <span id="ano">2026</span> Perale Odontologia · Jacareí-SP</p>
     <p><a href="https://www.instagram.com/peraleodontologia/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/peraleodontologia/" target="_blank" rel="noopener">Facebook</a></p>
   </div>
 </footer>
